@@ -38,7 +38,7 @@ class VSCode(dotbot.Plugin):
         vsfile = data["file"]
         return self._sync_vscodefile(vsfile, code)
 
-    def _handle_vscode(self, data: dict):
+    def _handle_vscode(self, data):
         if not isinstance(data, dict):
             self._log.error("Error format, please refer to documentation.")
             return False
